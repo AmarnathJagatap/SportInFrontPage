@@ -1,0 +1,43 @@
+import React, { useState } from 'react'
+import IntroImage from '../assets/3dimage.png'
+
+const Hero = () => {
+
+
+  return (
+    <div name="home"
+      className="relative bg-white flex items-center justify-center overflow-hidden pt-20"
+      >       
+      <div className="flex flex-col w-full  justify-center items-center z-30 p-5  bg-gray-100 bg-opacity-10">
+      <div className='md:hidden flex flex-col items-center max-w-[1240px] mx-auto grid md:grid-cols-2'>    
+         
+        <img className='w-[350px] my-4 rounded-lg' src={IntroImage} alt='/' />
+        <div className='flex flex-col justify-center items-center mx-2'>
+        <h1 className='md:text-4xl sm:text-3xl font-Rubik font-bold text-center text-black text-2xl font-bold py-4'>Play the Games</h1>
+            <p className='text-center text-gray-500 font-Rubik'>
+           some text to be showed in the form of the think which should be the think that can be arranged in the form fo notjginndansda ajdnasdnasd
+            </p>
+            <div onClick={()=>{}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-Merriweather cursor-pointer'>Explore Now</p></div>
+        </div>
+        </div>
+        <div className='hidden md:flex max-w-[1240px] mx-auto grid md:grid-cols-2'>
+        <div className='w-1/2 ml-5 flex flex-col justify-center items-center'>
+            <h1 className='md:text-7xl sm:text-3xl font-Rubik font-bold text-center text-black text-2xl font-bold py-4'>Play the Games</h1>
+            <p className='text-center text-gray-500 font-Rubik'>
+           some text to be showed in the form of the think which should be the think that can be arranged in the form fo notjginndansda ajdnasdnasd
+            </p>
+            <div className='flex flex-row'>
+            <div onClick={()=>{}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-Merriweather cursor-pointer'>Explore Now</p></div>
+            </div>     
+
+
+        </div>
+          <img className='w-[400px] ml-28  my-4 rounded-lg' src={IntroImage} alt='/' />
+        </div>
+         </div>      
+            
+    </div> 
+  )
+}
+
+export default Hero
