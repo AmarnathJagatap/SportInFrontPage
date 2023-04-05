@@ -43,10 +43,10 @@ const Navbar1 = () => {
             {isHovering?
             <ul className="absolute left-0 top-full bg-[#FF4500] py-2 px-4 rounded-3xl shadow-xl">
                 <li>
-                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Car Racing</LK>
+                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Leisure</LK>
                 </li>
                 <li>
-                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Bike Racing</LK>
+                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Sports</LK>
                 </li>
               </ul>:<></>}      
           </li>
@@ -77,10 +77,10 @@ const Navbar1 = () => {
           {isHover?
             <ul className="bg-[#FF4500] md:hidden list-inside">
                <li onClick={toggleNavbar}>
-                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Car Racing</LK>
+                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Leisure</LK>
                 </li>
                 <li onClick={toggleNavbar}>
-                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Bike Racing</LK>
+                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Sports</LK>
                 </li>
                
           </ul>:<></>}
