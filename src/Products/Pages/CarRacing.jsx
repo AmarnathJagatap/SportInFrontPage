@@ -19,8 +19,8 @@ const CarRacing = () => {
                     <div key={product.id} onClick={()=>{navigate('/productdetail',{state:{productdetail:product}})}} className="p-2 bg-white rounded-2xl shadow-lg">
                     <div className="bg-white p-4 rounded-lg">
                        <img className='w-[250px] h-[250px] my-4 rounded-lg' src={product.image} alt='/' />
-                        <h2 className="text-lg  text-left font-Rubik">{product.title}</h2>
-                        <p className="text-sm text-left font-Rubik">Rupees {product.rate}</p>
+                        <h2 className="text-lg  text-left font-SignikaNegative">{product.title}</h2>
+                        <p className="text-sm text-left font-SignikaNegative">Rupees {product.rate}</p>
                     </div>
                     </div>
                 ))}

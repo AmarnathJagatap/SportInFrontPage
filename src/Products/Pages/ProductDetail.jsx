@@ -59,16 +59,16 @@ const ProductDetail = () => {
       <div className='md:hidden flex flex-col items-center max-w-[1240px] mx-auto grid md:grid-cols-2'> 
       
     <div className='flex flex-col justify-center items-center mx-2'>
-        <h1 className='text-xl  font-Rubik font-bold text-center text-black text-2xl font-bold py-4'>{location.state.productdetail.title}</h1>
-        <p className='text-center text-gray-500 font-Rubik'>
+        <h1 className='text-xl  font-SignikaNegative font-bold text-center text-black text-2xl font-bold py-4'>{location.state.productdetail.title}</h1>
+        <p className='text-center text-gray-500 font-SignikaNegative'>
              <span className='font-bold text-black'>Discription: </span> {location.state.productdetail.discription}
         </p>
     </div>
     <div className='flex flex-col items-center py-10'>
-    <p className='text-center text-gray-900 font-Rubik'>
+    <p className='text-center text-gray-900 font-SignikaNegative'>
     Price : {location.state.productdetail.rate} rupees
         </p> 
-        <p className='text-center text-gray-900 font-Rubik'>
+        <p className='text-center text-gray-900 font-SignikaNegative'>
     Dimension : {location.state.productdetail.dimension} 
         </p>  
       <div onClick={()=>{setShowForm(true)}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-Merriweather cursor-pointer'>Buy Now</p></div>
@@ -76,8 +76,8 @@ const ProductDetail = () => {
         </div>
         <div className='hidden md:flex max-w-[1240px] mx-auto grid md:grid-cols-2'>
         <div className='w-1/2 ml-5 flex flex-col justify-center items-center'>
-            <h1 className='text-2xl  font-Rubik font-bold text-center text-black text-2xl font-bold py-4'>{location.state.productdetail.title}</h1>
-            <p className='text-center text-gray-500 font-Rubik'>
+            <h1 className='text-2xl  font-SignikaNegative font-bold text-center text-black text-2xl font-bold py-4'>{location.state.productdetail.title}</h1>
+            <p className='text-center text-gray-500 font-SignikaNegative'>
              <span className='font-bold text-black'>Discription: </span> {location.state.productdetail.discription}
             </p>
             <div className='flex flex-row'>
@@ -86,10 +86,10 @@ const ProductDetail = () => {
 
         </div>
         <div className='flex flex-col items-center w-full'>
-        <p className='text-center py-2 text-gray-900 font-Rubik'>
+        <p className='text-center py-2 text-gray-900 font-SignikaNegative'>
          Price : {location.state.productdetail.rate} rupees
         </p>    
-        <p className='text-center py-2 text-gray-900 font-Rubik'>
+        <p className='text-center py-2 text-gray-900 font-SignikaNegative'>
     Dimension : {location.state.productdetail.dimension} 
         </p>      
         <div onClick={()=>{setShowForm(true)}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-Merriweather cursor-pointer'>Buy Now</p></div>

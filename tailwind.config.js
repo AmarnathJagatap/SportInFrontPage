@@ -8,7 +8,8 @@ module.exports = {
       Merriweather:["Merriweather"],
       LibreBaskerville:["Libre Baskerville"],
       Oswald:['Oswald'],
-      Rubik:['Rubik']
+      Rubik:['Rubik'],
+      SignikaNegative:['Signika Negative']
      },
     screens: {
       sm: '640px',

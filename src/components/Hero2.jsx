@@ -9,8 +9,8 @@ const Hero2 = () => {
                 
             </div>
             <div class="h-96 flex flex-col relative  justify-center items-center shadow-xl">
-                <h1 className="text-[#FF4500] text-center sm:text-5xl text-5xl font-LibreBaskerville relative z-20">NEW ARRIVALS</h1>
-                <button className="bg-transparent text-xl text-[#FF4500] font-LibreBaskerville font-medium py-2 px-6 border rounded-xl border-[#FF4500] hover:bg-[#FF4500] hover:text-white transition-colors duration-300 relative z-20 mt-10">Shop Now</button>
+                <h1 className="text-[#FF4500] text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">NEW ARRIVALS</h1>
+                <button className="bg-transparent text-xl text-[#FF4500] font-SignikaNegative font-medium py-2 px-6 border rounded-xl border-[#FF4500] hover:bg-[#FF4500] hover:text-white transition-colors duration-300 relative z-20 mt-10">Shop Now</button>
             </div>           
         </div>       
     </div>

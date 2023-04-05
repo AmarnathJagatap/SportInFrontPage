@@ -35,29 +35,29 @@ const Navbar1 = () => {
         </div>
         <ul className="hidden md:flex items-center skew-x-6">
           <li>
-            <LK to="/" smooth={true} duration={500}  className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-Rubik hover:text-white hover:bg-[#FF281B]">Home</LK>
+            <LK to="/" smooth={true} duration={500}  className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">Home</LK>
           </li>
           <li className='relative ' onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <Link to="shop" smooth={true} offset={-200} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-Rubik hover:text-white hover:bg-[#FF281B]">Shop</Link>
+            <Link to="shop" smooth={true} offset={-200} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">Explore</Link>
             {isHovering?
             <ul className="absolute left-0 top-full bg-[#FF4500] py-2 px-4 rounded-3xl shadow-xl">
                 <li>
-                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Leisure</LK>
+                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Leisure</LK>
                 </li>
                 <li>
-                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Sports</LK>
+                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Sports</LK>
                 </li>
               </ul>:<></>}      
           </li>
           <li>
-          <LK to="/" smooth={true} offset={-50} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-Rubik hover:text-white hover:bg-[#FF281B]">About</LK>
+          <LK to="/" smooth={true} offset={-50} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">About</LK>
           </li>
           <li>
-          <LK to="/" smooth={true} offset={-50} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-Rubik hover:text-white hover:bg-[#FF281B]">Contact Us</LK>
+          <LK to="/" smooth={true} offset={-50} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">Contact Us</LK>
           </li>
           <li>
-          <LK to="/" smooth={true} offset={-100} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-Rubik hover:text-white hover:bg-[#FF281B]">Join Us</LK>
+          <LK to="/" smooth={true} offset={-100} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">Join Us</LK>
           </li>
          
         </ul>
@@ -70,30 +70,30 @@ const Navbar1 = () => {
       {isOpen && (
         <ul className="bg-[#FF4500] fixed left-0 top-[80px] w-full py-4 px-4 text-center md:hidden">
           <li>
-          <LK to="/" smooth={true} duration={500} className="block font-LibreBaskerville text-white font-medium mb-2" onClick={toggleNavbar}>Home</LK>
+          <LK to="/" smooth={true} duration={500} className="block font-SignikaNegative text-white font-medium mb-2" onClick={toggleNavbar}>Home</LK>
           </li>
           <li>
-          <Link to="shop" smooth={true} offset={-200} duration={500} className="block text-white font-LibreBaskerville font-medium mb-2" onClick={()=>{handleClick()}}>Shop</Link>  
+          <Link to="shop" smooth={true} offset={-200} duration={500} className="block text-white font-SignikaNegative font-medium mb-2" onClick={()=>{handleClick()}}>Explore</Link>  
           {isHover?
             <ul className="bg-[#FF4500] md:hidden list-inside">
                <li onClick={toggleNavbar}>
-                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Leisure</LK>
+                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Leisure</LK>
                 </li>
                 <li onClick={toggleNavbar}>
-                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium hover:text-gray-900">Sports</LK>
+                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Sports</LK>
                 </li>
                
           </ul>:<></>}
           </li>        
 
           <li>
-          <LK to="/" smooth={true} offset={-50} duration={500} className="block text-white font-LibreBaskerville font-medium mb-2" onClick={toggleNavbar}>About</LK>
+          <LK to="/" smooth={true} offset={-50} duration={500} className="block text-white font-SignikaNegative font-medium mb-2" onClick={toggleNavbar}>About</LK>
          </li>
          <li>
-         <LK to="/" smooth={true} offset={-50} duration={500} className="block text-white font-LibreBaskerville font-medium mb-2" onClick={toggleNavbar}>Contact Us</LK>
+         <LK to="/" smooth={true} offset={-50} duration={500} className="block text-white font-SignikaNegative font-medium mb-2" onClick={toggleNavbar}>Contact Us</LK>
          </li>
          <li>
-         <LK to="/" smooth={true} offset={-100} duration={500} className="block text-white font-LibreBaskerville font-medium mb-2" onClick={toggleNavbar}>Join Us</LK>
+         <LK to="/" smooth={true} offset={-100} duration={500} className="block text-white font-SignikaNegative font-medium mb-2" onClick={toggleNavbar}>Join Us</LK>
           </li>
         </ul>
       )}

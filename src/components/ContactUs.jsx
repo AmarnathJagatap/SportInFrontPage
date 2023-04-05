@@ -17,9 +17,9 @@ const ContactUs = () => {
                 <div className="absolute inset-0 bg-[#525252] opacity-30 z-10"></div>                
           </div>  
             <div class="h-screen flex flex-col relative bg-cover bg-no-repeat justify-center items-center bg-white">
-            <h1 className="text-[#525252] py-10 text-center sm:text-5xl text-5xl font-LibreBaskerville relative z-20">Contact US</h1>
+            <h1 className="text-[#525252] py-10 text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">Contact US</h1>
             <form onSubmit={handleSubmit} className="w-full flex flex-col items-center justify-center h-screen">
-      <label htmlFor="name" className="text-left font-LibreBaskerville font-bold text-[#525252]">Name</label>
+      <label htmlFor="name" className="text-left font-SignikaNegative font-bold text-[#525252]">Name</label>
       <input 
         type="text" 
         id="name" 
@@ -29,7 +29,7 @@ const ContactUs = () => {
         className="w-1/2 px-2 border-2 border-[#525252] bg-white text-black rounded-md py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-900" 
       />
 
-      <label htmlFor="email" className="text-left font-LibreBaskerville font-bold text-[#525252]">Email</label>
+      <label htmlFor="email" className="text-left font-SignikaNegative font-bold text-[#525252]">Email</label>
       <input 
         type="email" 
         id="email" 
@@ -39,7 +39,7 @@ const ContactUs = () => {
         className="w-1/2 px-2 border-2 border-[#525252] bg-white text-black rounded-md py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-900" 
       />
 
-     <label htmlFor="subject" className="text-left font-LibreBaskerville font-bold text-[#525252]">Subject</label>
+     <label htmlFor="subject" className="text-left font-SignikaNegative font-bold text-[#525252]">Subject</label>
       <input 
         type="text" 
         id="subject" 
@@ -48,7 +48,7 @@ const ContactUs = () => {
         onChange={(event) => setSubject(event.target.value)} 
         className="w-1/2 px-2 border-2 border-[#525252] bg-white text-black rounded-md py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-900" 
       />
-      <label htmlFor="message" className="text-left font-LibreBaskerville font-bold text-[#525252]">Message</label>
+      <label htmlFor="message" className="text-left font-SignikaNegative font-bold text-[#525252]">Message</label>
       <textarea 
         id="message" 
         name="message" 
@@ -57,7 +57,7 @@ const ContactUs = () => {
         className="w-1/2 px-2 border-2 border-[#525252] bg-white text-black rounded-md py-2 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-900" 
       />
 
-<button type="submit" className="bg-transparent rounded-xl text-xl text-[#525252] hover:text-white font-LibreBaskerville font-medium py-2 px-6 border rounded-none border-[#525252] hover:bg-[#525252] hover:text-white transition-colors duration-300 relative z-20 mt-10">Submit</button>
+<button type="submit" className="bg-transparent rounded-xl text-xl text-[#525252] hover:text-white font-SignikaNegative font-medium py-2 px-6 border rounded-none border-[#525252] hover:bg-[#525252] hover:text-white transition-colors duration-300 relative z-20 mt-10">Submit</button>
 
     </form>
             </div>

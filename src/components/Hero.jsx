@@ -13,21 +13,21 @@ const Hero = () => {
          
         <img className='w-[350px] my-4 rounded-lg' src={IntroImage} alt='/' />
         <div className='flex flex-col justify-center items-center mx-2'>
-        <h1 className='md:text-4xl sm:text-3xl font-Rubik font-bold text-center text-black text-2xl font-bold py-4'>Play the Games</h1>
-            <p className='text-center text-gray-500 font-Rubik'>
+        <h1 className='md:text-4xl sm:text-3xl font-SignikaNegative font-bold text-center text-black text-2xl font-bold py-4'>Play the Games</h1>
+            <p className='text-center text-gray-500 font-SignikaNegative'>
            some text to be showed in the form of the think which should be the think that can be arranged in the form fo notjginndansda ajdnasdnasd
             </p>
-            <div onClick={()=>{}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-Merriweather cursor-pointer'>Explore Now</p></div>
+            <div onClick={()=>{}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-SignikaNegative cursor-pointer'>Explore Now</p></div>
         </div>
         </div>
         <div className='hidden md:flex max-w-[1240px] mx-auto grid md:grid-cols-2'>
         <div className='w-1/2 ml-5 flex flex-col justify-center items-center'>
-            <h1 className='md:text-7xl sm:text-3xl font-Rubik font-bold text-center text-black text-2xl font-bold py-4'>Play the Games</h1>
-            <p className='text-center text-gray-500 font-Rubik'>
+            <h1 className='md:text-7xl sm:text-3xl font-SignikaNegative font-bold text-center text-black text-2xl font-bold py-4'>Play the Games</h1>
+            <p className='text-center text-gray-500 font-SignikaNegative'>
            some text to be showed in the form of the think which should be the think that can be arranged in the form fo notjginndansda ajdnasdnasd
             </p>
             <div className='flex flex-row'>
-            <div onClick={()=>{}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-Merriweather cursor-pointer'>Explore Now</p></div>
+            <div onClick={()=>{}} className='cursor-pointer  flex flex-row items-center justify-center bg-[#FF4500] hover:bg-white hover:text-[#FF4500] text-white w-[200px] rounded-3xl shadow-3xl font-medium my-6 mr-5  py-3'><p className='font-SignikaNegative cursor-pointer'>Explore Now</p></div>
             </div>     
 
 
