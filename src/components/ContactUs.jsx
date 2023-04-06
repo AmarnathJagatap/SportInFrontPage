@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Fade } from 'react-reveal';
 
 const ContactUs = () => {
     const [name, setName] = useState('');
@@ -13,10 +14,16 @@ const ContactUs = () => {
   return (
     <div name='contact' className='w-full'>
        <div className='grid md:grid-cols-2'>
-       <div class="h-screen flex flex-col relative bg-contain bg-no-repeat justify-center items-center" style={{backgroundImage: "url('https://res.cloudinary.com/dbwqjycvh/image/upload/v1680516360/fun-3d-illustration-cartoon-kid-with-vr-helmet_183364-81193_vfvsqb.jpg')"}}>
-                <div className="absolute inset-0 bg-[#525252] opacity-30 z-10"></div>                
-          </div>  
+        <div>
+       <div class="h-screen flex flex-col relative bg-contain bg-no-repeat justify-center items-center">
+      <Fade left>
+       <img src='https://res.cloudinary.com/dbwqjycvh/image/upload/v1680516360/fun-3d-illustration-cartoon-kid-with-vr-helmet_183364-81193_vfvsqb.jpg' className='hover:animate-pulse w-full h-screen'/>
+       </Fade>
+           <div className="absolute inset-0 bg-[#525252] opacity-30 z-10"></div>                
+      </div> 
+      </div> 
             <div class="h-screen flex flex-col relative bg-cover bg-no-repeat justify-center items-center bg-white">
+            <Fade right>
             <h1 className="text-[#525252] py-10 text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">Contact US</h1>
             <form onSubmit={handleSubmit} className="w-full flex flex-col items-center justify-center h-screen">
       <label htmlFor="name" className="text-left font-SignikaNegative font-bold text-[#525252]">Name</label>
@@ -60,6 +67,7 @@ const ContactUs = () => {
 <button type="submit" className="bg-transparent rounded-xl text-xl text-[#525252] hover:text-white font-SignikaNegative font-medium py-2 px-6 border rounded-none border-[#525252] hover:bg-[#525252] hover:text-white transition-colors duration-300 relative z-20 mt-10">Submit</button>
 
     </form>
+    </Fade>
             </div>
             
         </div>       

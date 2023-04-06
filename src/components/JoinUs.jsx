@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Bounce from 'react-reveal/Bounce';
 
 const JoinUs = () => {
   const [email, setEmail] = useState('');
@@ -11,9 +12,11 @@ const JoinUs = () => {
   return (
     <div name="join" className='w-full'>
         <div class="flex flex-col relative bg-cover py-20 bg-no-repeat justify-center items-center bg-[#6C0BA9]">
+        <Bounce bottom>
+
         <div class="flex flex-col relative  justify-center items-center">
                 <h1 className="text-white text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">JOIN OUR MAILING LIST</h1>
-                <p className="w-1/2 text-white mt-4 sm:text-lg text-lg font-SignikaNegative relative z-20">
+                <p className="text-center text-white mt-4 sm:text-lg text-lg font-SignikaNegative relative z-20">
                 AND NEVER MISS AN UPDATE
           </p>
              
@@ -36,6 +39,8 @@ const JoinUs = () => {
 <button type="submit" className="w-1/2 bg-transparent text-xl text-white hover:text-[#6C0BA9] font-SignikaNegative font-medium py-2 px-6 border rounded-none border-white hover:bg-white hover:text-white transition-colors duration-300 relative z-20 mt-10">Submit</button>
 
     </form>
+    </Bounce>
+
             </div>
             
     </div>
