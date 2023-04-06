@@ -81,9 +81,7 @@ const ProductDetail = () => {
              <span className='font-bold text-black'>Discription: </span> {location.state.productdetail.discription}
             </p>
             <div className='flex flex-row'>
-            </div>     
-
-
+            </div>    
         </div>
         <div className='flex flex-col items-center w-full'>
         <p className='text-center py-2 text-gray-900 font-SignikaNegative'>
