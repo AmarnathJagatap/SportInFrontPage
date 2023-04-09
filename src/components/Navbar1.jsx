@@ -41,7 +41,9 @@ const Navbar1 = () => {
     <nav className="bg-[#FF4500] w-full h-[80px] fixed z-50">
       <div className="container mx-auto h-full flex items-center justify-between">
       <div className='flex items-center'>
-      <img className='w-[150px] h-[70px] ml-5 my-4 rounded-lg' src={Logo} alt='/' />
+      <a href='https://sport-in-front-page.vercel.app/'>
+        <img className='w-[150px] h-[70px] ml-5 my-4 rounded-lg cursor-pointer' src={Logo} alt='/' />
+        </a>
         </div>
         <ul className="hidden md:flex items-center skew-x-6">
           <li>
