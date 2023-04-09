@@ -12,6 +12,8 @@ const Navbar1 = () => {
   }
 
   const [isHovering, setIsHovering] = useState(false);
+  const [onLeisure, setOnLeisure ] =useState(false);
+  const [onSports, setOnSports] = useState(false);
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -20,6 +22,14 @@ const Navbar1 = () => {
 
   const handleMouseLeave = () => {
     setIsHovering(false);
+  };
+
+  const handleLeisure= ()=>{
+    setOnLeisure(!onLeisure)
+  };
+
+  const handleSports = () =>{
+    setOnSports(!onSports)
   };
 
   const handleClick = () => {
@@ -41,14 +51,52 @@ const Navbar1 = () => {
             onMouseLeave={handleMouseLeave}>
             <Link to="shop" smooth={true} offset={-200} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">Explore</Link>
             {isHovering?
-            <ul className="absolute left-0 top-full bg-[#FF4500] py-2 px-4 rounded-3xl shadow-xl">
-                <li>
-                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Leisure</LK>
-                </li>
-                <li>
-                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Sports</LK>
-                </li>
-              </ul>:<></>}      
+            <div className="absolute flex flex-row left-0 top-full bg-[#FF4500] py-2 px-4 rounded-3xl shadow-xl">
+                <div className='mx-4'>
+                  <div  offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">Leisure </div>
+                  <ol className='list-disc list-inside'>
+                    <li>
+                      <LK to="/" smooth={true} offset={-70} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">TICKET REDEMPTION GAMES</LK>
+                    </li> 
+                    <li>
+                      <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">VR GAMES</LK>
+                    </li> 
+                    <li>
+                      <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">ARCADE</LK>
+                    </li>  
+                    <li>
+                      <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">SOFT PLAY</LK>
+                    </li>  
+                    <li>
+                      <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">TRAMPOLINE PARKS</LK>
+                    </li>                    
+                    <li>
+                      <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">SKILL GAMES</LK>
+                    </li>  
+                    <li>
+                      <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">KIDDIE RIDES</LK>
+                    </li>  
+                  </ol>
+                </div>
+                <div className='mx-4'>
+                  <LK to="/" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900">Sports</LK>
+                  <ol className='list-disc list-inside'>
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">CRICKET</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">FOOTBALL</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">BADMINTON</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">HOCKEY</LK>
+                    </li>                    
+                  </ol>
+                 </div>
+            </div>
+            :<></>}      
           </li>
           <li>
           <LK to="/" smooth={true} offset={-50} duration={500} className="text-white px-6 py-4 m-0  shadow-xl rounded-3xl font-medium cursor-pointer font-SignikaNegative hover:text-white hover:bg-[#FF281B]">About</LK>
@@ -63,7 +111,7 @@ const Navbar1 = () => {
         </ul>
         <div className="md:hidden flex items-center">
           <button className="text-white mx-10" onClick={toggleNavbar}>
-            {isOpen ? <HiOutlineX className="bg-[#FF4500] w-8 h-8" /> : <HiMenuAlt2 className="bg-[#FF4500] w-8 h-8" />}
+          {isOpen ? <HiOutlineX className="bg-[#6C0BA9] w-8 h-8" /> : <HiMenuAlt2 className="bg-[#6C0BA9] w-8 h-8" />}
           </button>
         </div>
       </div>
@@ -77,14 +125,54 @@ const Navbar1 = () => {
           {isHover?
             <ul className="bg-[#FF4500] md:hidden list-inside">
                <li onClick={toggleNavbar}>
-                  <LK to="/carracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Leisure</LK>
+                  <Link  smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900" onClick={handleLeisure}>Leisure</Link>
+                  {
+                    onLeisure?
+                  
+                  <ol className='list-inside list-disc w-full'>
+                  <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">TICKET REDEMPTION GAMES</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">VR GAMES</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">ARCADE</LK>
+                    </li>  
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">SOFT PLAY</LK>
+                    </li>  
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">TRAMPOLINE PARKS</LK>
+                    </li>                    
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">SKILL GAMES</LK>
+                    </li>  
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">KIDDIE RIDES</LK>
+                    </li>  
+                  </ol>:<></>}
                 </li>
                 <li onClick={toggleNavbar}>
-                  <LK to="/bikeracing" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-medium font-SignikaNegative hover:text-gray-900">Sports</LK>
-                </li>
-               
+                  <Link to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900" onClick={handleSports}>Sports</Link>
+                  {onSports?
+                  <ol className='list-disc list-inside'>
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">CRICKET</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">FOOTBALL</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">BADMINTON</LK>
+                    </li> 
+                    <li>
+                      <LK to="#" smooth={true} offset={-50} duration={500} className="text-white cursor-pointer font-SignikaNegative font-medium hover:text-gray-900 my-2">HOCKEY</LK>
+                    </li>                    
+                  </ol>:<></>}
+                </li>               
           </ul>:<></>}
-          </li>        
+          </li>              
 
           <li>
           <LK to="/" smooth={true} offset={-50} duration={500} className="block text-white font-SignikaNegative font-medium mb-2" onClick={toggleNavbar}>About</LK>
