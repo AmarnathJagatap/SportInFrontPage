@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav className="bg-[#FF4500] w-full h-[80px] fixed z-50">
       <div className="container mx-auto h-full flex items-center justify-between">
       <div className='flex items-center'>
-        <img className='w-[250px] ml-5 my-4 rounded-lg' src={Logo} alt='/' />
+        <img className='w-[150px] h-[70px] ml-5 my-4 rounded-lg' src={Logo} alt='/' />
         </div>
         <ul className="hidden md:flex items-center skew-x-6">
           <li>
@@ -104,7 +104,7 @@ const Navbar = () => {
         </ul>
         <div className="md:hidden flex items-center">
           <button className="text-white mx-10" onClick={toggleNavbar}>
-            {isOpen ? <HiOutlineX className="bg-[#FF4500] w-8 h-8" /> : <HiMenuAlt2 className="bg-[#FF4500] w-8 h-8" />}
+            {isOpen ? <HiOutlineX className="bg-[#6C0BA9] w-8 h-8" /> : <HiMenuAlt2 className="bg-[#6C0BA9] w-8 h-8" />}
           </button>
         </div>
       </div>
