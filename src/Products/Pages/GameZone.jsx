@@ -9,6 +9,7 @@ const GameZone = () => {
     <div name='carracing' className='h-screen w-full pt-28 py-10 bg-white'>
         <div className='flex flex-col items-center max-w-[1240px] mx-auto'>
             <div className='text-center'>
+               <p className="text-lg text-left font-SignikaNegative">At SportIn we have built state of the art tool to help game zone owners build and conceptualize their game zones.</p>
                <h1 className='md:text-4xl sm:text-3xl text-center font-Rubik text-black text-2xl font-bold py-2'>Coming Soon...</h1>
             </div>           
         </div>
