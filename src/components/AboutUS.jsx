@@ -16,12 +16,12 @@ const About = () => {
             <div class="flex flex-col relative  justify-center items-center my-10">
             <Fade left>         
               
-                 <h1 className="text-[#525252] text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">What We Do</h1>
-                <p className="text-[#525252] mx-4 text-justify mt-2 sm:text-lg text-lg font-SignikaNegative relative z-20">At Sportin Leisure, we specialize in creating exceptional leisure and entertainment destinations for our clients. We understand the importance of understanding our clients' needs, which is why we work closely with them to understand their vision, project brief, and ideal budget. We also take into consideration the target clientele, project feasibility, and site analysis to cater to the demographic.
+                 <h1 className="text-[#525252] text-center sm:text-5xl text-5xl font-SignikaNegative relative">What We Do</h1>
+                <p className="text-[#525252] mx-4 text-justify mt-2 sm:text-lg text-lg font-SignikaNegative relative">At Sportin Leisure, we specialize in creating exceptional leisure and entertainment destinations for our clients. We understand the importance of understanding our clients' needs, which is why we work closely with them to understand their vision, project brief, and ideal budget. We also take into consideration the target clientele, project feasibility, and site analysis to cater to the demographic.
                 </p>
-                <p className="text-[#525252] mx-4 text-justify mt-2 sm:text-lg text-lg font-SignikaNegative relative z-20">
+                <p className="text-[#525252] mx-4 text-justify mt-2 sm:text-lg text-lg font-SignikaNegative relative">
 We create and ideate by focusing on brand value, master planning, conceptualization, themed ambiances, schematic and detailed design. Our aim is to realize the creation by providing design supervision, project management, commissioning, pre-opening, and soft launch services.</p>
-<p className="text-[#525252] text-justify mt-2 mx-4 sm:text-lg text-lg font-SignikaNegative relative z-20">We provide post-launch support, including operations management, revenue analysis, marketing and promotion, and maximizing revenues. Our goal is to ensure that our clients' leisure facilities are not just operational but successful in the long term.</p>
+<p className="text-[#525252] text-justify mt-2 mx-4 sm:text-lg text-lg font-SignikaNegative relative">We provide post-launch support, including operations management, revenue analysis, marketing and promotion, and maximizing revenues. Our goal is to ensure that our clients' leisure facilities are not just operational but successful in the long term.</p>
                 </Fade>
 
             </div> 
