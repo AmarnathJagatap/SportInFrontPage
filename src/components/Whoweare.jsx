@@ -4,17 +4,17 @@ import Fade from 'react-reveal/Fade';
 const Whoweare = () => {
   return (
     <div name="about"  className='w-full bg-white'>
-       <div className='grid md:grid-cols-2'>
+       <div className='flex flex-col items-center justify-center grid md:grid-cols-2'>
             
             <div>
               <Fade right>
-            <div class="h-screen flex flex-col relative justify-center items-center">
-                <img src='https://res.cloudinary.com/dbwqjycvh/image/upload/v1681052716/funny-illustration-3d-cartoon-backpacker_183364-80286_mqfvqr.jpg' className='hover:animate-pulse justify-center  w-full'/>
+            <div class="flex flex-col relative justify-center items-center">
+                <img src='https://res.cloudinary.com/dbwqjycvh/image/upload/v1681106371/WhatsApp_Image_2023-04-10_at_10.04.40_AM_1_es2gko.jpg' className='hover:animate-pulse justify-center  w-full'/>
             </div>
             </Fade> 
             </div> 
             <div>  
-            <div class="h-screen flex flex-col relative  justify-center items-center shadow-xl">
+            <div class="flex flex-col relative  justify-center items-center">
             <Fade left>         
               
                  <h1 className="text-[#525252] text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">Who We Are?</h1>
