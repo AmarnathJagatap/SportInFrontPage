@@ -13,7 +13,7 @@ const About = () => {
             </Fade> 
             </div>    
             <div>  
-            <div class="flex flex-col relative  justify-center items-center shadow-xl my-10">
+            <div class="flex flex-col relative  justify-center items-center my-10">
             <Fade left>         
               
                  <h1 className="text-[#525252] text-center sm:text-5xl text-5xl font-SignikaNegative relative z-20">What We Do</h1>
